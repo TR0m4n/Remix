@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_proxied",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newAddress",
+						"type": "address"
+					}
+				],
+				"name": "setLogicContractAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".learneth/ethereum/remix-workshops/6 Storage_Problem/step6.sol": "ProxyContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".learneth/ethereum/remix-workshops/6 Storage_Problem/step6.sol": {
+			"keccak256": "0xd79f0f909fc4f3aab10df58d0346fb2d947663f21ae9a76836215330206fdf51",
+			"urls": [
+				"bzz-raw://767b4d7983666c773443702f42d7cc22359d27012ca70947a9c59d142c94982f",
+				"dweb:/ipfs/QmQHuBe1W2kHBNan1DfB1pfjeTJAusSJr18XZ3ZvmjncCw"
+			]
+		}
+	},
+	"version": 1
+}

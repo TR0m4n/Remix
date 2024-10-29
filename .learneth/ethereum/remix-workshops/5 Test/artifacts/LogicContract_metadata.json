@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".learneth/ethereum/remix-workshops/5 Test/step5.sol": "LogicContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".learneth/ethereum/remix-workshops/5 Test/step5.sol": {
+			"keccak256": "0x64b64530e33b88ac872d394f3051369fb3e966c4058feb1cf9f1a567553c8dd5",
+			"urls": [
+				"bzz-raw://bbf0be83d1f4bb5b199005ae5a4ae85879de95d3cfe3f18abfc30334d2348682",
+				"dweb:/ipfs/QmT7qsHLPdx25SZ359ug5G8LFQ2y8oG7CPJv7QiVMHaC16"
+			]
+		}
+	},
+	"version": 1
+}

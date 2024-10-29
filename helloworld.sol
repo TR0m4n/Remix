@@ -4,5 +4,5 @@
 pragma solidity 0.8.26;
 
 contract HelloWorld {
-
+    uint private count = 1;
 }
