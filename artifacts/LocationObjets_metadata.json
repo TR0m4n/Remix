@@ -1,0 +1,424 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "idObjet",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					}
+				],
+				"name": "LocationTerminee",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "proprietaire",
+						"type": "address"
+					}
+				],
+				"name": "ObjetAjoute",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "idObjet",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dateDebut",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dateFin",
+						"type": "uint256"
+					}
+				],
+				"name": "ObjetLoue",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nom",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tarifJournalier",
+						"type": "uint256"
+					}
+				],
+				"name": "ajouterObjet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "compteurLocations",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "compteurObjets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "locations",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "idObjet",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateDebut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateFin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idObjet",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_jours",
+						"type": "uint256"
+					}
+				],
+				"name": "louerObjet",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "objets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tarifJournalier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "proprietaire",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "disponible",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "objetsParUtilisateur",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idLocation",
+						"type": "uint256"
+					}
+				],
+				"name": "obtenirLocation",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "idObjet",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "locataire",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateDebut",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateFin",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct LocationObjets.Location",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idObjet",
+						"type": "uint256"
+					}
+				],
+				"name": "obtenirObjet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "nom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tarifJournalier",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "proprietaire",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "disponible",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct LocationObjets.Objet",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_utilisateur",
+						"type": "address"
+					}
+				],
+				"name": "obtenirObjetsUtilisateur",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idLocation",
+						"type": "uint256"
+					}
+				],
+				"name": "terminerLocation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"helloworld.sol": "LocationObjets"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"helloworld.sol": {
+			"keccak256": "0x7668c3f7f9c075f13a9755d452e300e20c6a77c8613980cf9e20f7bf54338ee3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://013b666f14f3525d940617fe000dee14a5c7ae2beaca71153bc8ddeb5d5d1513",
+				"dweb:/ipfs/QmPwmCL4ppuafy56xdgreMTn79KAjfwgSv4Q6weJdjajV1"
+			]
+		}
+	},
+	"version": 1
+}
