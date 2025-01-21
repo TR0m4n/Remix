@@ -245,6 +245,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getSimulatedTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bytes32",
@@ -375,6 +388,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_jours",
+						"type": "uint256"
+					}
+				],
+				"name": "passerLeTemps",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes32",
 						"name": "role",
 						"type": "bytes32"
@@ -424,6 +450,19 @@
 				"name": "revokeRole",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simulatedTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -553,11 +592,11 @@
 			]
 		},
 		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-			"keccak256": "0xbf61ab2ae1d575a17ea58fbb99ca232baddcc4e0eeea180e84cbc74b0c348b31",
+			"keccak256": "0x6ef9389a2c07bc40d8a7ba48914724ab2c108fac391ce12314f01321813e6368",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4e0968705bad99747a8e5288aa008678c2be2f471f919dce3925a3cc4f1dee09",
-				"dweb:/ipfs/QmbAFnCQfo4tw6ssfQSjhA5LzwHWNNryXN8bX7ty8jiqqn"
+				"bzz-raw://b7a5cb39b1e6df68f4dd9a5e76e853d745a74ffb3dfd7df4ae4d2ace6992a171",
+				"dweb:/ipfs/QmPbzKR19rdM8X3PLQjsmHRepUKhvoZnedSR63XyGtXZib"
 			]
 		},
 		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
@@ -601,11 +640,11 @@
 			]
 		},
 		"helloworld.sol": {
-			"keccak256": "0x631071f9c655697d7aa81c37df4f2411c5a34a6d0152aeb76d2f8b10a3088da5",
+			"keccak256": "0xf2d7b509705f61f5780551e4f0bcf34d16daf43cd7544f764b7c56c4f3b2421c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ba4bccb53495bad35a2db325d2354c4ab92b642d5b62cc92ca884119a88e6b47",
-				"dweb:/ipfs/QmSVsgzsFkzLA29qUCUYy395AuQbtAeNLT4S6PPwP1J2iH"
+				"bzz-raw://800aa3784ef2b61633ae8219023821d5502960536374c71fcb901d7ba6e2d30a",
+				"dweb:/ipfs/QmSCWkBps2qNkCYvHiy1Umf7t7YXX9JWV67RE8fFsyDGgu"
 			]
 		},
 		"snft-token.sol": {
